@@ -46,8 +46,7 @@ sync() {
         tar -xzvf data.src.tar.gz
         rm -rf data.src.tar.gz
         git status
-        git add .
-        git commit -m "deploy from gitbook"
+        git commit -am "deploy from gitbook"
         ;;
     esac
 }
