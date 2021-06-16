@@ -47,6 +47,7 @@ sync() {
         rm -rf data.src.tar.gz
         git status
         git commit -am "deploy from gitbook"
+        git push origin master
         ;;
     esac
 }
