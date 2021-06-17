@@ -22,10 +22,10 @@ die() {
 }
 
 # get real path
-abspath=$(pwd)
+path=$(pwd)
 
 #清除之前生成的文件
-rm -rf $abspath/_book
+rm -rf $path/_book
 
 TARGET=$1
 PROJECT='my town'
@@ -77,6 +77,6 @@ github.io)
     blog
     ;;
 *)
-    die "parameters is no reght!"
+    die "parameters is no right!"
     ;;
 esac
